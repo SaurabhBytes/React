@@ -1,0 +1,181 @@
+// function App(){
+//   return (
+//     <div>                      // correct — wrapped in one parent
+//       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, atque repudiandae.</p>
+//       <h1>Hello React!</h1>
+//     </div>
+//   )
+// }
+
+// const { useEffect } = require("react");
+
+// export default App
+
+
+
+
+// We can write any javascript expression {}
+
+// function App(){
+//   const name = 'Saurabh'
+//   const age = 22
+
+//   return(
+
+//     <div>
+//       <h1>Hello {name}!</h1>
+//       <p>I am {age} years old</p>
+//       <p>Next year I'll be {age + 1} years old</p>
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+// Components - Heart of React 🔥
+
+// function Header(){
+//   return(
+//     <div>
+//       <h1>My website</h1>
+//       <p>Welcome to my page</p>
+//     </div>
+//   )
+// }
+
+// function App(){
+//   return(
+//     <div>
+//       <Header/>                   {/* ✅ self closing tag */}
+//       <Header/> 
+//       <Header/> 
+//       <p>This is the main component</p>
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+
+// Using props 
+
+function Header (props){
+  return(
+    <div>
+      <h1>{props.title}</h1>
+      <p>{props.description}</p>
+    </div>
+  )
+}
+
+// Destructuring props! 💪 
+// function Header({title,description}){
+//   return(
+//   <div>
+//     <h1>{title}</h1>
+//     <p>{description}</p>
+//   </div>
+//   )
+// }
+
+// function App(){
+//   return(
+//     <div>
+//      <Header title = "My Website" description ='Welcome to my page' ></Header>
+//      <Header title = "About Us" description ='Learn more about us!' ></Header>
+//      <Header title = "Contact" description ='Get in touch!' ></Header>
+
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+
+// useState 🔥
+// import { useState } from "react";
+
+// function App(){
+//   const [count, setCount] = useState(0)
+
+//   return(
+//     <div>
+//       <h1>Count: {count}</h1>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//       <button onClick={() => setCount(count - 1)}>Decrease</button>
+//       <button onClick={() => setCount(0)}>Reset</button>
+
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+
+
+// useEffect
+// useEffect runs code after the component renders.
+
+// import { useState, useEffect } from "react";
+
+// function App(){
+//   const [count, setCount] = useState(0)
+
+//   useEffect(() => {
+//     console.log('Components rendered')
+//   })
+
+//   return(
+//     <div>
+//       <h1>Count: {count}</h1>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//     </div>
+//   )
+// }
+// export default App
+
+
+// import { useState, useEffect } from "react";
+// function App(){
+//   const [users, setUsers] = useState([])
+
+//   useEffect(() => {
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(response => response.json())
+//     .then(data => setUsers(data))
+//   }, [])
+
+//   return(
+//     <div>
+//       <h1>Users</h1>
+//       <ul>
+//         {users.map(user => (
+//           <li key={user.id}>{user.name}</li>
+//         ))}
+//       </ul>
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+
+
+
+
+import ProfileCard from './exercise1'
+
+function App(){
+  return(
+      <div>
+   <ProfileCard name = "Saurabh" age = '22' city = 'Bilaspur' goal = 'Becoming a full stack developer' ></ProfileCard>
+      </div>
+  )
+}
+
+export default App
