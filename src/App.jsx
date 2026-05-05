@@ -201,14 +201,25 @@
 
 
 
-import LikeButton from "./exercise3";
+// import LikeButton from "./exercise3";
+
+// function App(){
+//   return(
+//     <div>
+//       <LikeButton/>
+//     </div>
+//   )
+// }
+// export default App
+
+
+import Timer from "./exercise4";
 
 function App(){
   return(
     <div>
-      <LikeButton/>
+      <Timer/>
     </div>
   )
 }
-
 export default App
