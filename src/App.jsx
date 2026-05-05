@@ -61,14 +61,14 @@
 
 // Using props 
 
-function Header (props){
-  return(
-    <div>
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
-    </div>
-  )
-}
+// function Header (props){
+//   return(
+//     <div>
+//       <h1>{props.title}</h1>
+//       <p>{props.description}</p>
+//     </div>
+//   )
+// }
 
 // Destructuring props! 💪 
 // function Header({title,description}){
@@ -168,13 +168,29 @@ function Header (props){
 
 
 
-import ProfileCard from './exercise1'
+// import ProfileCard from './exercise1'
+
+// function App(){
+//   return(
+//       <div>
+//    <ProfileCard name = "Saurabh" age = '22' city = 'Bilaspur' goal = 'Becoming a full stack developer' ></ProfileCard>
+//       </div>
+//   )
+// }
+
+// export default App
+
+
+import ProductCard from './exercise2'
 
 function App(){
   return(
-      <div>
-   <ProfileCard name = "Saurabh" age = '22' city = 'Bilaspur' goal = 'Becoming a full stack developer' ></ProfileCard>
-      </div>
+    <div>
+      <ProductCard name = 'iPhone 15' price = '$79,999' inStock = {true} ></ProductCard>
+      <ProductCard name = 'Samsung TV' price = '$49,999' inStock = {false} ></ProductCard>
+      <ProductCard name = 'Sony Headphones ' price = '$29,999' inStock = {true} ></ProductCard>
+
+    </div>
   )
 }
 
