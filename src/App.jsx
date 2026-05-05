@@ -213,12 +213,24 @@
 // export default App
 
 
-import Timer from "./exercise4";
+// import Timer from "./exercise4";
+
+// function App(){
+//   return(
+//     <div>
+//       <Timer/>
+//     </div>
+//   )
+// }
+// export default App
+
+
+import Fetcher from "./exercise5"
 
 function App(){
   return(
     <div>
-      <Timer/>
+      <Fetcher/>
     </div>
   )
 }
