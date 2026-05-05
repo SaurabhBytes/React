@@ -105,6 +105,8 @@
 //     <div>
 //       <h1>Count: {count}</h1>
 //       <button onClick={() => setCount(count + 1)}>Increase</button>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+
 //       <button onClick={() => setCount(count - 1)}>Decrease</button>
 //       <button onClick={() => setCount(0)}>Reset</button>
 
@@ -181,15 +183,30 @@
 // export default App
 
 
-import ProductCard from './exercise2'
+// import ProductCard from './exercise2'
+
+// function App(){
+//   return(
+//     <div>
+//       <ProductCard name = 'iPhone 15' price = '$79,999' inStock = {true} ></ProductCard>
+//       <ProductCard name = 'Samsung TV' price = '$49,999' inStock = {false} ></ProductCard>
+//       <ProductCard name = 'Sony Headphones ' price = '$29,999' inStock = {true} ></ProductCard>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+import LikeButton from "./exercise3";
 
 function App(){
   return(
     <div>
-      <ProductCard name = 'iPhone 15' price = '$79,999' inStock = {true} ></ProductCard>
-      <ProductCard name = 'Samsung TV' price = '$49,999' inStock = {false} ></ProductCard>
-      <ProductCard name = 'Sony Headphones ' price = '$29,999' inStock = {true} ></ProductCard>
-
+      <LikeButton/>
     </div>
   )
 }
