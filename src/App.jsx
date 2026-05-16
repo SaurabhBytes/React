@@ -225,13 +225,38 @@
 // export default App
 
 
-import Fetcher from "./exercise5"
+// import Fetcher from "./exercise5"
+
+// function App(){
+//   return(
+//     <div>
+//       <Fetcher/>
+//     </div>
+//   )
+// }
+// export default App
+
+
+// import EventHandling from "./EventHandling";
+// function App(){
+//   return(
+//     <div>
+//       <h1>Hello</h1>
+//       <EventHandling/>
+//     </div>
+//   )
+    
+//   }
+//   export default App
+
+import ConditionalRendering from "./ConditionalRendering";
 
 function App(){
   return(
     <div>
-      <Fetcher/>
+      <ConditionalRendering/>
     </div>
   )
 }
+
 export default App
