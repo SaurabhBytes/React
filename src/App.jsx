@@ -249,13 +249,37 @@
 //   }
 //   export default App
 
-import ConditionalRendering from "./ConditionalRendering";
+// import ConditionalRendering from "./ConditionalRendering";
+
+// function App(){
+//   return(
+//     <div>
+//       <ConditionalRendering/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from './Home'
+import About from "./About";
+import Contact from "./Contact";
 
 function App(){
   return(
-    <div>
-      <ConditionalRendering/>
-    </div>
+    <BrowserRouter>
+    <nav>
+      <Link to= "/">Home</Link>
+      <Link to= "/about">About</Link>
+      <Link to= "/contact">Contact</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+      </Routes>
+      </BrowserRouter>
   )
 }
 
