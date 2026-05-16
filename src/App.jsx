@@ -285,15 +285,26 @@
 // export default App
 
 
-import Form from "./Form";
+// import Form from "./Form";
+
+// function App(){
+//   return(
+//   <div>
+//     <Form/>
+//   </div>
+//   )
+// }
+
+// export default App
+
+import Form from "./FormExercise";
 
 function App(){
   return(
-  <div>
-    <Form/>
-  </div>
+    <div>
+      <Form/>
+    </div>
   )
 }
-
 export default App
 
