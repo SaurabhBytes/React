@@ -297,14 +297,27 @@
 
 // export default App
 
-import Form from "./FormExercise";
+// import Form from "./FormExercise";
+
+// function App(){
+//   return(
+//     <div>
+//       <Form/>
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+import Navbar from "./Navbar";
 
 function App(){
   return(
     <div>
-      <Form/>
+      <Navbar/>
     </div>
   )
 }
-export default App
 
+export default App
